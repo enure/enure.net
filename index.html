@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <title>Charles Stuart</title>
     <style>
         @-webkit-keyframes fadeIn {
@@ -110,48 +110,12 @@
         </ul>
     </div>
     <script>
-        // This <script> from Mobile Boilerplate
-        (function(document){
-            window.MBP = window.MBP || {};
-
-            // Hide URL Bar for iOS and Android by Scott Jehl
-            // https://gist.github.com/1183357
-            MBP.hideUrlBar = function () {
-                var win = window,
-                    doc = win.document;
-                // If there's a hash, or addEventListener is undefined, stop here
-                if (!location.hash || !win.addEventListener){
-                    //scroll to 1
-                    window.scrollTo(0, 1);
-                    var scrollTop = 1,
-                    //reset to 0 on bodyready, if needed
-                    bodycheck = setInterval(function(){
-                        if (doc.body) {
-                            clearInterval(bodycheck);
-                            scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
-                            win.scrollTo(0, scrollTop === 1 ? 0 : 1);
-                        }
-                    }, 15 );
-                    function scrollToTop() {
-                        setTimeout(function(){
-                            //reset to hide addr bar at onload
-                            win.scrollTo(0, scrollTop === 1 ? 0 : 1);
-                        }, 0);
-                    }
-                    win.addEventListener("load", scrollToTop, false );
-                    win.addEventListener("orientationchange", scrollToTop, false );
-                }
-            };
-        })(document);
-    </script>
-    <script>
-        MBP.hideUrlBar();
-        function freeze(e) {
-            e.preventDefault();
-        }
-        document.addEventListener("touchmove", freeze, false);
-
-        document.body.className = 'animated fadeIn';
+        document.addEventListener("touchmove", function(e) {
+            e.preventDefault()
+        }, false)
+        setTimeout(function() {
+            document.body.className = 'animated fadeIn'
+        }, 250)
     </script>
 </body>
 </html>
