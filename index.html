@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Charles Stuart</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
     <style>
         @-webkit-keyframes fadeIn {
             0% {opacity: 0;}
@@ -48,6 +49,7 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             font-size: 18px;
+            line-height: 1;
         }
         ul { list-style-type: none; }
         .col {
@@ -55,30 +57,31 @@
             float: left;
             margin-bottom: 40px;
         }
-        html,body {
+        body {
             background-color: #ffde0f;
             background-image: -webkit-radial-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px);
             background-size: 10px 10px;
-            height: 100%;
             -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
             padding: 20px;
             color: #444;
-            font-family: Helvetica, sans-serif;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-weight: normal;
-            line-height: 1.3;
+            opacity: 0;
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 24px;
-            font-weight: normal;
+            font-weight: 600;
         }
         h1 span {
             color: rgb(250,250,250);
-            background-color: #222;
+            background-color: #333;
             border-radius: 3px;
-            padding: 12px;
+            padding: 10px;
+            display: inline-block;
         }
+        li { line-height: 1.4; }
         a, a:visited{
             text-decoration: none;
             color: #444;
@@ -93,7 +96,6 @@
             -o-transition: color .25s ease-in;
             transition: color .25s ease-in;
         }
-        body { opacity: 0; }
     </style>
 </head>
 <body>
