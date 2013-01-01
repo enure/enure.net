@@ -6,25 +6,6 @@
     <title>Charles Stuart</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
     <style>
-        @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-
-        @-moz-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-
-        @-o-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
         .animated {
             -webkit-animation-duration: 1.5s;
                -moz-animation-duration: 1.5s;
@@ -35,7 +16,22 @@
                  -o-animation-fill-mode: both;
                     animation-fill-mode: both;
         }
-
+        @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @-moz-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @-o-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
         .fadeIn {
             -webkit-animation-name: fadeIn;
             -moz-animation-name: fadeIn;
@@ -51,15 +47,15 @@
             font-size: 18px;
             line-height: 1;
         }
-        ul { list-style-type: none; }
         .col {
-            width: 300px;
+            width: 220px;
             float: left;
+            display: inline;
             margin-bottom: 40px;
         }
         body {
             background-color: #ffde0f;
-            background-image: -webkit-radial-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px);
+            background-image: -webkit-radial-gradient(rgba(0, 0, 0, .05) 1px, transparent 1px);
             background-size: 10px 10px;
             -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
@@ -69,19 +65,25 @@
             font-weight: normal;
             opacity: 0;
         }
-        h1 {
+        .heading {
             margin-bottom: 10px;
             font-size: 24px;
             font-weight: 600;
         }
-        h1 span {
+        .heading span {
             color: rgb(250,250,250);
             background-color: #333;
             border-radius: 3px;
             padding: 10px;
             display: inline-block;
         }
-        li { line-height: 1.5; }
+        .subheading {
+            line-height: 1.3;
+        }
+        .links {
+            list-style-type: none;
+        }
+        .links li { line-height: 1.5; }
         a, a:visited{
             text-decoration: none;
             color: #444;
@@ -100,11 +102,11 @@
 </head>
 <body>
     <div class="col">
-        <h1><span>Charles Stuart</span></h1>
-        <p>Web Developer &amp; UI Designer</p>
+        <h1 class="heading"><span>Charles Stuart</span></h1>
+        <p class="subheading">Web Developer &amp; UI Designer</p>
     </div>
     <div class="col">
-        <ul>
+        <ul class="links">
             <li><a href="//www.linkedin.com/in/charlesstuart">Work History</a></li>
             <li><a href="//github.com/enure">Code</a></li>
             <li><a href="//www.flickr.com/photos/chst">Photographs</a></li>
