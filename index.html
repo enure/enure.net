@@ -4,41 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Charles Stuart</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
     <style>
-        .animated {
-            -webkit-animation-duration: 1.5s;
-               -moz-animation-duration: 1.5s;
-                 -o-animation-duration: 1.5s;
-                    animation-duration: 1.5s;
-            -webkit-animation-fill-mode: both;
-               -moz-animation-fill-mode: both;
-                 -o-animation-fill-mode: both;
-                    animation-fill-mode: both;
-        }
-        @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-        @-moz-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-        @-o-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-        .fadeIn {
-            -webkit-animation-name: fadeIn;
-            -moz-animation-name: fadeIn;
-            -o-animation-name: fadeIn;
-            animation-name: fadeIn;
-        }
-        html,body,h1,ul,li,div,p {
+        html,body,h1,ul,li,p,div {
             margin: 0;
             padding: 0;
             -webkit-box-sizing: border-box;
@@ -46,82 +13,52 @@
             box-sizing: border-box;
             font-size: 18px;
             line-height: 1;
-        }
-        .col {
-            width: 220px;
-            float: left;
-            display: inline;
-            margin-bottom: 40px;
+            font-weight: normal;
         }
         body {
-            background-color: #ccc;
-            background-image: -webkit-radial-gradient(rgba(0, 0, 0, .05) 1px, transparent 1px);
-            background-size: 10px 10px;
+            background-color: #ffd;
             -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
-            padding: 20px;
+            padding: 40px 20px 20px;
             color: #444;
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            opacity: 0;
+            font-family: Georgia, Times New Roman, Serif;
+            text-align: center;
+        }
+        @media (min-width: 480px) {
+            body { padding-top: 100px; }
         }
         .heading {
             margin-bottom: 10px;
-            font-size: 24px;
-            font-weight: 600;
-        }
-        .heading span {
-            color: rgb(250,250,250);
-            background-color: #444;
-            border-radius: 3px;
-            padding: 10px;
-            display: inline-block;
+            font-size: 32px;
         }
         .subheading {
-            line-height: 1.3;
+            margin-bottom: 28px;
+        }
+        .spacer {
+            margin-bottom: 16px;
         }
         .links {
             list-style-type: none;
         }
-        .links li { line-height: 1.5; }
+        .links li {
+            line-height: 1.5;
+        }
         a, a:visited{
             text-decoration: none;
             color: #444;
-            -webkit-tap-highlight-color: transparent;
-        }
-        a:hover, a:active {
-            color: #111;
-        }
-        a:hover {
-            -webkit-transition: color .25s ease-in;
-            -moz-transition: color .25s ease-in;
-            -o-transition: color .25s ease-in;
-            transition: color .25s ease-in;
         }
     </style>
 </head>
 <body>
-    <div class="col">
-        <h1 class="heading"><span>Charles Stuart</span></h1>
-        <p class="subheading">Web Developer &amp; UI Designer</p>
-    </div>
-    <div class="col">
-        <ul class="links">
-            <li><a href="//portfolio.enure.net">Portfolio</a></li>
-            <li><a href="//github.com/enure">Github</a></li>
-            <li><a href="//linkedin.com/in/charlesstuart">LinkedIn</a></li>
-            <li><a href="//flickr.com/photos/chst">Flickr</a></li>
-            <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#115;&#064;&#101;&#110;&#117;&#114;&#101;&#046;&#110;&#101;&#116;">Contact</a></li>
-        </ul>
-    </div>
-    <script>
-        setTimeout(function() {
-            document.body.className = 'animated fadeIn'
-        }, 250)
-    </script>
-
-    <script src="//static.getclicky.com/js"></script>
-    <script>try{ clicky.init(100564205); }catch(e){}</script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100564205ns.gif" /></p></noscript>
+    <h1 class="heading">Charles Stuart</h1>
+    <p class="subheading">Web Developer &amp; UI Designer</p>
+    <div class="spacer">* * *</div>
+    <ul class="links">
+        <li><a href="http://portfolio.enure.net">Portfolio</a></li>
+        <li><a href="http://github.com/enure">Github</a></li>
+        <li><a href="http://linkedin.com/in/charlesstuart">LinkedIn</a></li>
+        <li><a href="http://flickr.com/photos/chst">Flickr</a></li>
+        <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#115;&#064;&#101;&#110;&#117;&#114;&#101;&#046;&#110;&#101;&#116;">Contact</a></li>
+    </ul>
 </body>
 </html>
