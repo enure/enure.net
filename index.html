@@ -5,68 +5,71 @@
     <meta name="viewport" content="initial-scale=1">
     <title>Charles Stuart</title>
     <style>
-        html,body,h1,ul,li,p,div {
+        body {
+            font-size: 10px;
+            background-color: #FFFEE1;
+            padding: 2em 4em;
+            font-family: times new roman, times, serif;
+            color: #444;
+        }
+        h1, ul, p {
+            font-size: 2em;
+            line-height: 1.4;
             margin: 0;
             padding: 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            font-size: 18px;
-            line-height: 30px;
-            font-weight: normal;
         }
-        body {
-            background-color: #ffd;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            padding: 50px 0 20px;
-            color: #444;
-            font-family: Georgia, Times New Roman, Serif;
-            text-align: center;
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 3em;
+            margin-bottom: .5em;
         }
-        .heading {
-            margin-bottom: 10px;
-            font-size: 30px;
+        p {
+            margin-bottom: .75em;
         }
-        .subheading, .spacer {
-            margin-bottom: 15px;
+        ul {
+            list-style-type: square;
         }
-        .links {
-            list-style-type: none;
-        }
-        a, a:visited{
+        h1, ul, p, a, a:visited{
             text-decoration: none;
             color: #444;
+        }
+        a:hover {
+            color: red;
+        }
+        @media (min-width: 37.5em) {
+            body {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1 class="heading">
+    <h1>
         Charles Stuart
     </h1>
-    <p class="subheading">
+    <p>
         Web Developer &amp; UI Designer
     </p>
-    <div class="spacer">
-        * * *
-    </div>
-    <ul class="links">
-        <li>
-            <a href="http://portfolio.enure.net">Portfolio</a>
-        </li>
-        <li>
-            <a href="http://github.com/enure">Github</a>
-        </li>
-        <li>
-            <a href="http://linkedin.com/in/charlesstuart">LinkedIn</a>
-        </li>
-        <li>
-            <a href="http://500px.com/enure">500px</a>
-        </li>
-        <li>
-            <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#115;&#064;&#101;&#110;&#117;&#114;&#101;&#046;&#110;&#101;&#116;">Contact</a>
-        </li>
-    </ul>
+    <nav>
+        <ul>
+            <li>
+                <a href="http://portfolio.enure.net">Portfolio</a>
+            </li>
+            <li>
+                <a href="http://github.com/enure">Github</a>
+            </li>
+            <li>
+                <a href="http://linkedin.com/in/charlesstuart">LinkedIn</a>
+            </li>
+            <li>
+                <a href="http://500px.com/enure">500px</a>
+            </li>
+            <li>
+                <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#115;&#064;&#101;&#110;&#117;&#114;&#101;&#046;&#110;&#101;&#116;">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <!-- 
         Source available at:
         https://github.com/enure/enure.net
