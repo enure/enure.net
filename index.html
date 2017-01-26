@@ -1,70 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>Charles Stuart</title>
+    <title>enure.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fefefe;
+    }
+    @media (min-width: 768px) {
         body {
-            background-color: #fff;
-            padding: 2em 4em;
-            color: #333;
-            font-family: Georgia, serif;
-            line-height: 1.6;
+            padding: 0 8vw;
         }
-        h1 {
-            font-size: 1.2em;
-            font-weight: normal;
-            margin-bottom: 0;
+    }
+    h1 {
+        font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    ul, li {
+        margin: 0;
+        padding: 0;
+
+    }
+    h1 {
+        padding-right: 30px;
+        color: #333;
+    }
+    h1,
+    .Item {
+        display: block;
+        margin: 140px 0;
+        position: relative;
+    }
+    .Number {
+        position: absolute;
+        left: 10px;
+        top: -30px;
+        font-family: helvetica, arial, sans-serif;
+        color: #ddd;
+    }
+    @media (min-width: 768px) {
+        .Number {
+            left: 0;
+            top: 30px;
         }
-        p {
-            margin: 0.8em 0 3em;
-            text-transform: uppercase;
-            font-size: 0.8em;
+    }
+    .Image {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+    @media (min-width: 768px) {
+        .Image {
+            border: 30px solid #fff;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li:before {
-            content: "-";
-            color: #888;
-        }
-        a, a:visited {
-          color: #AC0011;
-          text-decoration: none;
-          font-size: 0.9em;
-        }
+    }
     </style>
 </head>
 <body>
-    <h1>
-        Charles Stuart
-    </h1>
-    <p>
-        Web Developer &amp; UI Designer
-    </p>
-    <nav>
-        <ul>
-            <li>
-                <a href="https://github.com/enure">Github</a>
-            </li>
-            <li>
-                <a href="https://500px.com/enure">500px</a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/charlesstuart">LinkedIn</a>
-            </li>
-        </ul>
-    </nav>
-    <!--
-        Source available at:
-        https://github.com/enure/enure.net
+    <ul><li class=Item><span class=Number>1</span><img class=Image data-src='img/20170101-DSC00892.jpg'></li>
+	<li class=Item><span class=Number>2</span><img class=Image data-src='img/20161229-DSC00801.jpg'></li>
+	<li class=Item><span class=Number>3</span><img class=Image data-src='img/20161229-DSC00792.jpg'></li>
+	<li class=Item><span class=Number>4</span><img class=Image data-src='img/20161229-DSC00764.jpg'></li>
+	<li class=Item><span class=Number>5</span><img class=Image data-src='img/20161229-DSC00749.jpg'></li>
+	<li class=Item><span class=Number>6</span><img class=Image data-src='img/20161229-DSC00659.jpg'></li>
+	<li class=Item><span class=Number>7</span><img class=Image data-src='img/20161221-DSC00478.jpg'></li>
+	<li class=Item><span class=Number>8</span><img class=Image data-src='img/20161215-DSC00284.jpg'></li>
+	<li class=Item><span class=Number>9</span><img class=Image data-src='img/20161215-DSC00262.jpg'></li>
+	<li class=Item><span class=Number>10</span><img class=Image data-src='img/20161208-DSC00169.jpg'></li>
+	<li class=Item><span class=Number>11</span><img class=Image data-src='img/20161204-DSC00125.jpg'></li>
+	<li class=Item><span class=Number>12</span><img class=Image data-src='img/20161204-DSC00109.jpg'></li>
+	<li class=Item><span class=Number>13</span><img class=Image data-src='img/20161203-DSC00091.jpg'></li>
+	<li class=Item><span class=Number>14</span><img class=Image data-src='img/20161106-IMG_2781.jpg'></li>
+	<li class=Item><span class=Number>15</span><img class=Image data-src='img/20161029-IMG_2922.jpg'></li>
+	<li class=Item><span class=Number>16</span><img class=Image data-src='img/20161026-IMG_2581.jpg'></li>
+	<li class=Item><span class=Number>17</span><img class=Image data-src='img/20161023-IMG_2557.jpg'></li>
+	<li class=Item><span class=Number>18</span><img class=Image data-src='img/20161009-IMG_2437.jpg'></li>
+	<li class=Item><span class=Number>19</span><img class=Image data-src='img/20160929-IMG_2378.jpg'></li>
+	<li class=Item><span class=Number>20</span><img class=Image data-src='img/20160912-IMG_2150.jpg'></li>
+	<li class=Item><span class=Number>21</span><img class=Image data-src='img/20160912-IMG_2134.jpg'></li>
+	<li class=Item><span class=Number>22</span><img class=Image data-src='img/20160904-IMG_1947.jpg'></li>
+	<li class=Item><span class=Number>23</span><img class=Image data-src='img/20160831-IMG_1867.jpg'></li>
+	<li class=Item><span class=Number>24</span><img class=Image data-src='img/20160828-IMG_1781.jpg'></li>
+	<li class=Item><span class=Number>25</span><img class=Image data-src='img/20160828-IMG_1732.jpg'></li>
+	<li class=Item><span class=Number>26</span><img class=Image data-src='img/20160828-IMG_1720.jpg'></li>
+	<li class=Item><span class=Number>27</span><img class=Image data-src='img/20160813-IMG_1556.jpg'></li>
+	<li class=Item><span class=Number>28</span><img class=Image data-src='img/20160813-IMG_1545.jpg'></li>
+	<li class=Item><span class=Number>29</span><img class=Image data-src='img/20160806-IMG_1451.jpg'></li>
+	<li class=Item><span class=Number>30</span><img class=Image data-src='img/20160724-IMG_1304.jpg'></li>
+	<li class=Item><span class=Number>31</span><img class=Image data-src='img/20160717-IMG_1225.jpg'></li>
+	<li class=Item><span class=Number>32</span><img class=Image data-src='img/20160708-IMG_1098.jpg'></li>
+	<li class=Item><span class=Number>33</span><img class=Image data-src='img/20160708-IMG_1095.jpg'></li>
+	<li class=Item><span class=Number>34</span><img class=Image data-src='img/20160707-IMG_1092.jpg'></li>
+	<li class=Item><span class=Number>35</span><img class=Image data-src='img/20160707-IMG_1082.jpg'></li>
+	<li class=Item><span class=Number>36</span><img class=Image data-src='img/20160707-IMG_1075.jpg'></li>
+	<li class=Item><span class=Number>37</span><img class=Image data-src='img/20160701-IMG_0953.jpg'></li>
+	<li class=Item><span class=Number>38</span><img class=Image data-src='img/20160630-IMG_0918.jpg'></li>
+	<li class=Item><span class=Number>39</span><img class=Image data-src='img/20160629-IMG_0884.jpg'></li>
+	<li class=Item><span class=Number>40</span><img class=Image data-src='img/20160628-IMG_0891.jpg'></li>
+	<li class=Item><span class=Number>41</span><img class=Image data-src='img/20160622-IMG_0795.jpg'></li>
+	<li class=Item><span class=Number>42</span><img class=Image data-src='img/20160423-IMG_0467.jpg'></li>
+	<li class=Item><span class=Number>43</span><img class=Image data-src='img/20160402-IMG_0377.jpg'></li>
+	<li class=Item><span class=Number>44</span><img class=Image data-src='img/20141130-IMG_5137.jpg'></li>
+	<li class=Item><span class=Number>45</span><img class=Image data-src='img/20140913-IMG_4893.jpg'></li>
+	<li class=Item><span class=Number>46</span><img class=Image data-src='img/20140810-IMG_4696.jpg'></li>
+	<li class=Item><span class=Number>47</span><img class=Image data-src='img/20140810-IMG_4647.jpg'></li>
+	<li class=Item><span class=Number>48</span><img class=Image data-src='img/20140718-IMG_4463.jpg'></li>
+	<li class=Item><span class=Number>49</span><img class=Image data-src='img/20140410-IMG_4186.jpg'></li>
+	<li class=Item><span class=Number>50</span><img class=Image data-src='img/20131012-IMG_3749.jpg'></li>
+	<li class=Item><span class=Number>51</span><img class=Image data-src='img/20130815-IMG_3433.jpg'></li>
+	<li class=Item><span class=Number>52</span><img class=Image data-src='img/20130815-IMG_3422.jpg'></li>
+	<li class=Item><span class=Number>53</span><img class=Image data-src='img/20130808-IMG_3374.jpg'></li>
+	<li class=Item><span class=Number>54</span><img class=Image data-src='img/20130606-IMG_3176.jpg'></li>
+	<li class=Item><span class=Number>55</span><img class=Image data-src='img/20130513-2013-05-13_13.53.35.jpg'></li>
+	<li class=Item><span class=Number>56</span><img class=Image data-src='img/20120820-2012-08-20_08.23.59.jpg'></li>
+	<li class=Item><span class=Number>57</span><img class=Image data-src='img/20120621-2012-06-21_20.11.54.jpg'></li>
+	<li class=Item><span class=Number>58</span><img class=Image data-src='img/20120621-2012-06-21_18.27.14.jpg'></li>
+	<li class=Item><span class=Number>59</span><img class=Image data-src='img/20120615-2012-06-15_09.00.55.jpg'></li>
+	<li class=Item><span class=Number>60</span><img class=Image data-src='img/20120416-2012-04-16_08.34.12.jpg'></li>
+	<li class=Item><span class=Number>61</span><img class=Image data-src='img/20110102-DSCF7460.jpg'></li>
+	<li class=Item><span class=Number>62</span><img class=Image data-src='img/20110101-DSCF7395.jpg'></li>
+	<li class=Item><span class=Number>63</span><img class=Image data-src='img/20091220-DSCF6755.jpg'></li>
+	<li class=Item><span class=Number>64</span><img class=Image data-src='img/20090606-DSCF6432.jpg'></li>
+	<li class=Item><span class=Number>65</span><img class=Image data-src='img/20090313-DSCF5861.jpg'></li>
+	<li class=Item><span class=Number>66</span><img class=Image data-src='img/20070505-DSCF2554.jpg'></li>
+	<li class=Item><span class=Number>67</span><img class=Image data-src='img/20070408-DSCF2533.jpg'></li>
+	<li class=Item><span class=Number>68</span><img class=Image data-src='img/20061231-xmas_more_2006_DSCF1712.jpg'></li>
+	<li class=Item><span class=Number>69</span><img class=Image data-src='img/20030602-PICT0047.jpg'></li>
+	</ul>
+    <h1>Charles Stuart, Missoula MT</h1>
+    <script>
+    /*!
+     * in-view 0.6.1 - Get notified when a DOM element enters or exits the viewport.
+     * Copyright (c) 2016 Cam Wiegert <cam@camwiegert.com> - https://camwiegert.github.io/in-view
+     * License: MIT
+     */
+    !function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.inView=e():t.inView=e()}(this,function(){return function(t){function e(r){if(n[r])return n[r].exports;var i=n[r]={exports:{},id:r,loaded:!1};return t[r].call(i.exports,i,i.exports,e),i.loaded=!0,i.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var i=n(2),o=r(i);t.exports=o["default"]},function(t,e){function n(t){var e=typeof t;return null!=t&&("object"==e||"function"==e)}t.exports=n},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var i=n(9),o=r(i),u=n(3),f=r(u),s=n(4),c=function(){if("undefined"!=typeof window){var t=100,e=["scroll","resize","load"],n={history:[]},r={offset:{},threshold:0,test:s.inViewport},i=(0,o["default"])(function(){n.history.forEach(function(t){n[t].check()})},t);e.forEach(function(t){return addEventListener(t,i)}),window.MutationObserver&&addEventListener("DOMContentLoaded",function(){new MutationObserver(i).observe(document.body,{attributes:!0,childList:!0,subtree:!0})});var u=function(t){if("string"==typeof t){var e=[].slice.call(document.querySelectorAll(t));return n.history.indexOf(t)>-1?n[t].elements=e:(n[t]=(0,f["default"])(e,r),n.history.push(t)),n[t]}};return u.offset=function(t){if(void 0===t)return r.offset;var e=function(t){return"number"==typeof t};return["top","right","bottom","left"].forEach(e(t)?function(e){return r.offset[e]=t}:function(n){return e(t[n])?r.offset[n]=t[n]:null}),r.offset},u.threshold=function(t){return"number"==typeof t&&t>=0&&t<=1?r.threshold=t:r.threshold},u.test=function(t){return"function"==typeof t?r.test=t:r.test},u.is=function(t){return r.test(t,r)},u.offset(0),u}};e["default"]=c()},function(t,e){"use strict";function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i=function(){function t(e,r){n(this,t),this.options=r,this.elements=e,this.current=[],this.handlers={enter:[],exit:[]},this.singles={enter:[],exit:[]}}return r(t,[{key:"check",value:function(){var t=this;return this.elements.forEach(function(e){var n=t.options.test(e,t.options),r=t.current.indexOf(e),i=r>-1,o=n&&!i,u=!n&&i;o&&(t.current.push(e),t.emit("enter",e)),u&&(t.current.splice(r,1),t.emit("exit",e))}),this}},{key:"on",value:function(t,e){return this.handlers[t].push(e),this}},{key:"once",value:function(t,e){return this.singles[t].unshift(e),this}},{key:"emit",value:function(t,e){for(;this.singles[t].length;)this.singles[t].pop()(e);for(var n=this.handlers[t].length;--n>-1;)this.handlers[t][n](e);return this}}]),t}();e["default"]=function(t,e){return new i(t,e)}},function(t,e){"use strict";function n(t,e){var n=t.getBoundingClientRect(),r=n.top,i=n.right,o=n.bottom,u=n.left,f=n.width,s=n.height,c={t:o,r:window.innerWidth-u,b:window.innerHeight-r,l:i},a={x:e.threshold*f,y:e.threshold*s};return c.t>e.offset.top+a.y&&c.r>e.offset.right+a.x&&c.b>e.offset.bottom+a.y&&c.l>e.offset.left+a.x}Object.defineProperty(e,"__esModule",{value:!0}),e.inViewport=n},function(t,e){(function(e){var n="object"==typeof e&&e&&e.Object===Object&&e;t.exports=n}).call(e,function(){return this}())},function(t,e,n){var r=n(5),i="object"==typeof self&&self&&self.Object===Object&&self,o=r||i||Function("return this")();t.exports=o},function(t,e,n){function r(t,e,n){function r(e){var n=x,r=m;return x=m=void 0,E=e,w=t.apply(r,n)}function a(t){return E=t,j=setTimeout(h,e),M?r(t):w}function l(t){var n=t-O,r=t-E,i=e-n;return _?c(i,g-r):i}function d(t){var n=t-O,r=t-E;return void 0===O||n>=e||n<0||_&&r>=g}function h(){var t=o();return d(t)?p(t):void(j=setTimeout(h,l(t)))}function p(t){return j=void 0,T&&x?r(t):(x=m=void 0,w)}function v(){void 0!==j&&clearTimeout(j),E=0,x=O=m=j=void 0}function y(){return void 0===j?w:p(o())}function b(){var t=o(),n=d(t);if(x=arguments,m=this,O=t,n){if(void 0===j)return a(O);if(_)return j=setTimeout(h,e),r(O)}return void 0===j&&(j=setTimeout(h,e)),w}var x,m,g,w,j,O,E=0,M=!1,_=!1,T=!0;if("function"!=typeof t)throw new TypeError(f);return e=u(e)||0,i(n)&&(M=!!n.leading,_="maxWait"in n,g=_?s(u(n.maxWait)||0,e):g,T="trailing"in n?!!n.trailing:T),b.cancel=v,b.flush=y,b}var i=n(1),o=n(8),u=n(10),f="Expected a function",s=Math.max,c=Math.min;t.exports=r},function(t,e,n){var r=n(6),i=function(){return r.Date.now()};t.exports=i},function(t,e,n){function r(t,e,n){var r=!0,f=!0;if("function"!=typeof t)throw new TypeError(u);return o(n)&&(r="leading"in n?!!n.leading:r,f="trailing"in n?!!n.trailing:f),i(t,e,{leading:r,maxWait:e,trailing:f})}var i=n(7),o=n(1),u="Expected a function";t.exports=r},function(t,e){function n(t){return t}t.exports=n}])});
+    </script>
+    <script>
 
-        Resume available at (password protected):
-        http://registry.jsonresume.org/charlesstuart
+        inView.offset(-500);
 
-        Email me at cs at enure dot net.
-    -->
+        inView('.Image')
+            .on('enter', function(elem) {
+                elem.setAttribute('src', elem.dataset.src);
+            });
+
+   </script>
 </body>
 </html>
