@@ -18,3 +18,8 @@ html_file = File.read("template.html")
 html = html_file.gsub("%REPLACE_ME%", html_string)
 
 File.write("index.html", html)
+
+system "git add index.html"
+system "git add img/*"
+system "git c -m 'update'"
+system "git push"
