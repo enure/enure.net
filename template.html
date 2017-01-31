@@ -87,11 +87,12 @@
     </script>
     <script>
 
-        inView.offset(-500);
+        inView.offset(-800);
 
         inView('.Image')
             .on('enter', function(elem) {
                 elem.setAttribute('src', elem.dataset.src);
+                elem.setAttribute('srcset', elem.dataset.srcset);
             });
 
    </script>
