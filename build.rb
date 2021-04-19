@@ -11,9 +11,9 @@ system "mkdir -p dist/img/608"
 
 html_string = "<ul>"
 
-Dir.glob("img/*.jpg").reverse.each do |file|
+Dir.glob("src/*.jpg").reverse.each do |file|
 
-    new_file_name = file.gsub("img/", "")
+    new_file_name = file.gsub("src/", "")
     new_file_name = new_file_name.split("-").first
     new_file_name = "#{new_file_name}_#{SecureRandom.hex}.jpg"
 
